@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Backend</title>
+    <style>
+        ul {
+            margin-left: 50px; 
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: blue;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pages:</h1>
+    <ul>
+        <li><a href="/admin">Admin</a></li>
+        <li><a href="{% url 'portfolio:developer' %}">Developer</a></li>
+        <li><a href="{% url 'portfolio:title' %}">Title</a></li>
+        <li><a href="{% url 'portfolio:social_link' %}">SocialLink</a></li>
+        <li><a href="{% url 'portfolio:language' %}">Language</a></li>
+        <li><a href="{% url 'portfolio:skill' %}">Skill</a></li>
+        <li><a href="{% url 'portfolio:framework' %}">Framework</a></li>
+        <li><a href="{% url 'portfolio:repository' %}">Repository</a></li>
+        <li><a href="{% url 'portfolio:education' %}">Education</a></li>
+        <li><a href="{% url 'portfolio:project_category' %}">ProjectCategory</a></li>
+        <li><a href="{% url 'portfolio:project_language' %}">ErojectLanguage</a></li>
+        <li><a href="{% url 'portfolio:external_link' %}">ExternalLink</a></li>
+        <li><a href="{% url 'portfolio:project' %}">Project</a></li>
+        <li><a href="{% url 'portfolio:project_image' %}">ProjectImage</a></li>
+        <li><a href="{% url 'portfolio:experience' %}">Experience</a></li>
+    </ul>    
+</body>
+</html>
