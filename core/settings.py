@@ -121,11 +121,19 @@ DEFAULT_CONTACT_EMAIL = 'contacto@manuelferrero.com.ar'
 #! =============================== PRODUCTION SETTINGS ===============================
 if not DEBUG:
     ALLOWED_HOSTS = [
+        'http://www.manuelferrero.com.ar',
         'https://www.manuelferrero.com.ar',
+        'http://ferreromanuel.pythonanywhere.com',
         'https://ferreromanuel.pythonanywhere.com',
+        'ferreromanuel.pythonanywhere.com'
     ]
 
-    CSRF_TRUSTED_ORIGINS = ALLOWED_HOSTS
+    CSRF_TRUSTED_ORIGINS = [
+        'http://www.manuelferrero.com.ar',
+        'https://www.manuelferrero.com.ar',
+        'http://ferreromanuel.pythonanywhere.com',
+        'https://ferreromanuel.pythonanywhere.com',
+    ]
 
     # Email settings
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
