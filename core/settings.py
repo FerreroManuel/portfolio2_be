@@ -153,7 +153,12 @@ if not DEBUG:
     # CORS Policy
     CORS_ALLOW_ALL_ORIGINS = False
     
-    CORS_ALLOWED_ORIGINS = []
+    CORS_ALLOWED_ORIGINS = [
+        'http://www.manuelferrero.com.ar',
+        'https://www.manuelferrero.com.ar',
+        'http://manuelferrero.com.ar',
+        'https://manuelferrero.com.ar',
+    ]
 
     # Session & CSRF cookies
     SESSION_COOKIE_SECURE = True
