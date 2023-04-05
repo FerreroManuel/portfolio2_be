@@ -96,17 +96,11 @@ STATIC_URL = "static/"
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+MEDIA_URL = "/media/"
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-# Media files settings
-PUBLIC_MEDIA_LOCATION = 'assets/media'
-
-MEDIA_URL = f'https://www.manuelferrero.com.ar/{PUBLIC_MEDIA_LOCATION}/'
-
-# Django-Storages settings
-DEFAULT_FILE_STORAGE = 'storages.backends.ftp.FTPStorage'
-
-FTP_STORAGE_LOCATION = os.environ.get('FTP_STORAGE_LOCATION')
 
 # CORS settings
 CORS_ALLOW_ALL_ORIGINS = True
