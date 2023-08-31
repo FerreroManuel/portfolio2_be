@@ -205,10 +205,10 @@ class ProjectImageDetail(generics.RetrieveUpdateDestroyAPIView):
 
 # Experience
 class ExperienceList(generics.ListCreateAPIView):
-    queryset = Experience.objects.filter(isActive=True).order_by('-finishDate')
+    queryset = Experience.objects.filter(isActive=True).order_by('-finishDate').order_by('-startDate')
     serializer_class = ExperienceSerializer
 
 
 class ExperienceDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Experience.objects.all().order_by('-finishDate')
+    queryset = Experience.objects.all().order_by('-finishDate').order_by('-startDate')
     serializer_class = ExperienceSerializer
