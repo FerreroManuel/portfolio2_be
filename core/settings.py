@@ -119,9 +119,13 @@ if not DEBUG:
     ALLOWED_HOSTS = [
         'http://www.manuelferrero.com.ar',
         'https://www.manuelferrero.com.ar',
+        'manuelferrero.com.ar',
+        'http://api.manuelferrero.com.ar',
+        'https://api.manuelferrero.com.ar',
+        'api.manuelferrero.com.ar',
         'http://ferreromanuel.pythonanywhere.com',
         'https://ferreromanuel.pythonanywhere.com',
-        'ferreromanuel.pythonanywhere.com'
+        'ferreromanuel.pythonanywhere.com',
     ]
 
     CSRF_TRUSTED_ORIGINS = [
